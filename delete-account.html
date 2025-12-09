@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Silme Talebi - Nerdy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .back-link {
+            color: #f5a623;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            background: linear-gradient(90deg, #f5a623, #f7c56e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #f5a623;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #b0b0b0;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #f5a623;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #f5a623, #f7c56e);
+            color: #1a1a2e;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(245, 166, 35, 0.3);
+            color: #1a1a2e;
+        }
+
+        .warning-box {
+            background: rgba(245, 166, 35, 0.1);
+            border: 1px solid rgba(245, 166, 35, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .warning-box p {
+            color: #f7c56e;
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        footer p {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">&larr; Ana Sayfaya Don</a>
+            <h1>Hesap Silme Talebi</h1>
+            <p class="subtitle">Nerdy hesabinizi kalici olarak silmek icin asagidaki adimlari takip edin.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Hesap Silme Sureci</h2>
+                <p>Hesabinizi silmek istediginizde, asagidaki butona tiklayarak bize e-posta gonderebilirsiniz. Talebiniz 30 gun icinde isleme alinacaktir.</p>
+            </section>
+
+            <section>
+                <h2>Silinecek Veriler</h2>
+                <p>Hesabiniz silindiginde asagidaki veriler kalici olarak kaldirilacaktir:</p>
+                <ul>
+                    <li><strong>Hesap bilgileri:</strong> Kullanici adiniz ve e-posta adresiniz</li>
+                    <li><strong>Oyun verileri:</strong> Ilerlemeniz, puanlariniz ve tamamlanan kartlar</li>
+                    <li><strong>Basarilar:</strong> Kazandiginiz tum basarilar ve rozetler</li>
+                    <li><strong>Liderlik tablosu:</strong> Siralamanizdaki yeriniz</li>
+                </ul>
+            </section>
+
+            <div class="warning-box">
+                <p><strong>Onemli:</strong> Bu islem geri alinamaz. Hesabiniz silindikten sonra verilerinizi kurtarmak mumkun degildir.</p>
+            </div>
+
+            <section>
+                <h2>Talep Olustur</h2>
+                <p>Hesabinizi silmek icin asagidaki butona tiklayin. E-posta uygulamaniz acilacak ve hazir bir sablon ile talebinizi gonderebileceksiniz.</p>
+                <a href="mailto:oguzcc@gmail.com?subject=Hesap%20Silme%20Talebi%20-%20Nerdy&body=Merhaba,%0A%0ANerdy%20uygulamasindaki%20hesabimin%20silinmesini%20talep%20ediyorum.%0A%0AKayitli%20e-posta%20adresim:%20%0A%0ATesekkurler." class="cta-button">Hesap Silme Talebi Gonder</a>
+            </section>
+
+            <section>
+                <h2>Sorulariniz mi Var?</h2>
+                <p>Hesap silme islemi hakkinda sorulariniz varsa, bize <a href="mailto:oguzcc@gmail.com">oguzcc@gmail.com</a> adresinden ulasabilirsiniz.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Nerdy. Tum haklari saklidir.</p>
+        </footer>
+    </div>
+</body>
+</html>
