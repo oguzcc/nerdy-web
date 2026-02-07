@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerdy - Eglenerek Matematik Ogren</title>
+    <meta name="description" content="Nerdy, ilgi cekici bir matematik ogrenme uygulamasidir. Uslu sayilar, karekok, cebirsel ifadeler calisin ve arkadaslarinizla yaristin!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #f5a623;
+        }
+
+        .back-to-apps {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f5a623;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-to-apps:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #f5a623, #f7c56e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .app-store-badge {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .app-store-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .app-store-badge img {
+            height: 50px;
+        }
+
+        .store-badges {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .screenshots {
+            padding: 60px 0;
+        }
+
+        .screenshots h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #f5a623;
+        }
+
+        .screenshot-scroll {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .screenshot-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .screenshot-scroll::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+        }
+
+        .screenshot-scroll::-webkit-scrollbar-thumb {
+            background: #f5a623;
+            border-radius: 4px;
+        }
+
+        .screenshot-item {
+            flex: 0 0 auto;
+            scroll-snap-align: center;
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 250px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .screenshot-item p {
+            margin-top: 15px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .features {
+            padding: 60px 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #f5a623;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .feature-card p {
+            color: #888;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: #f5a623;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 15px;
+            color: #888;
+        }
+
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-btn {
+            padding: 5px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            color: #f5a623;
+        }
+
+        .lang-btn.active {
+            background: rgba(245, 166, 35, 0.2);
+            color: #f5a623;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .screenshot-item img {
+                width: 200px;
+            }
+
+            .back-to-apps {
+                position: static;
+                transform: none;
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="position: relative;">
+            <a href="/index-tr.html" class="back-to-apps">&larr; Tum Uygulamalar</a>
+            <div class="lang-switcher">
+                <a href="index.html" class="lang-btn">EN</a>
+                <a href="index-tr.html" class="lang-btn active">TR</a>
+            </div>
+            <div class="logo">Nerdy</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Eglenerek Matematik Ogren</h1>
+                <p>Uslu sayilar, karekok ve cebirsel ifadeler calisin. Bilgi kartlariyla kendinizi gelistirin veya gercek zamanli cok oyunculu modda arkadaslarinizla yaristin!</p>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/us/app/nerdy-math/id6450151568" class="app-store-badge" target="_blank" rel="noopener">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store'dan Indir">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.oguzcc.nerdy" class="app-store-badge" target="_blank" rel="noopener">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play'den Edin">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="screenshots">
+            <div class="container">
+                <h2>Uygulama Onizlemesi</h2>
+                <div class="screenshot-scroll">
+                    <div class="screenshot-item">
+                        <img src="screenshots/home.png" alt="Ana Ekran">
+                        <p>Konulara Goz At</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="screenshots/snatch.png" alt="Snatch Modu">
+                        <p>Kart Yakala</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="screenshots/multiplayer.png" alt="Cok Oyunculu">
+                        <p>Cok Oyunculu</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="screenshots/leaderboard.png" alt="Liderlik Tablosu">
+                        <p>Liderlik Tablosu</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="screenshots/profile.png" alt="Profil">
+                        <p>Ilerlemeniz</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Ozellikler</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">5<sup>2</sup></div>
+                        <h3>Birden Fazla Konu</h3>
+                        <p>Uslu sayilar, karekok, cebirsel ifadeler ve daha fazlasini calisin. Duzenii olarak yeni konular ekleniyor!</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#127183;</div>
+                        <h3>Bilgi Kartlariyla Ogrenme</h3>
+                        <p>Interaktif bilgi kartlariyla kendi hizinizda ogrenin. Kavramlari tek tek kaydirarak ustalasin.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128101;</div>
+                        <h3>Cok Oyunculu Mod</h3>
+                        <p>Gercek zamanli olarak 8 arkadasa kadar yaristin! Odalar olusturun ve en hizli cozenin kim oldugunu gorun.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#127942;</div>
+                        <h3>Liderlik Tablosu</h3>
+                        <p>Global liderlik tablosunda yukseltn ve puan kazanin. Ilerlemenizi takip edin ve zirve icin yaristn!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Gelistirici: Oguz Can</p>
+            <p>&copy; 2026 Nerdy. Tum haklari saklidir.</p>
+            <div class="footer-links">
+                <a href="privacy-tr.html">Gizlilik Politikasi</a>
+                <a href="terms-tr.html">Kullanim Kosullari</a>
+                <a href="delete-account-tr.html">Hesap Silme</a>
+                <a href="mailto:oguzcc@icloud.com">Iletisim</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

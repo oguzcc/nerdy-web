@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikasi - Nerdy Lang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .lang-switcher {
+            position: absolute;
+            top: 40px;
+            right: 20px;
+        }
+
+        .lang-btn {
+            padding: 5px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            color: #2ec4b6;
+        }
+
+        .lang-btn.active {
+            background: rgba(46, 196, 182, 0.2);
+            color: #2ec4b6;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .back-link {
+            color: #2ec4b6;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            background: linear-gradient(90deg, #2ec4b6, #6ee4d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2ec4b6;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #6ee4d8;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #b0b0b0;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #2ec4b6;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        footer p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            margin: 0 15px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #2ec4b6;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .lang-switcher {
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switcher">
+            <a href="privacy.html" class="lang-btn">EN</a>
+            <a href="privacy-tr.html" class="lang-btn active">TR</a>
+        </div>
+
+        <header>
+            <a href="index-tr.html" class="back-link">&larr; Ana Sayfaya Don</a>
+            <h1>Gizlilik Politikasi</h1>
+            <p class="last-updated">Son Guncelleme: Subat 2026</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Giris</h2>
+                <p>Nerdy Lang ("biz," "bizim" veya "bize") gizliliginizi korumaya kararliyiz. Bu Gizlilik Politikasi, Nerdy Lang mobil uygulamasini (Ingilizce ogrenme uygulamasi) kullanirken bilgilerinizi nasil topladigimizi, kullandigimizi, ifsa ettigimizi ve korudigimizi aciklar.</p>
+                <p>Lutfen bu Gizlilik Politikasini dikkatlice okuyun. Uygulamayi kullanarak, bu politikaya uygun olarak bilgi toplanmasini ve kullanilmasini kabul etmis olursunuz.</p>
+            </section>
+
+            <section>
+                <h2>Topladigimiz Bilgiler</h2>
+
+                <h3>Bize Sagladiginiz Bilgiler</h3>
+                <p><strong>Hesap Bilgileri:</strong> Google ile Giris veya Apple ile Giris kullanarak bir hesap olusturdugusunuzda, su bilgileri toplayabiliriz:</p>
+                <ul>
+                    <li>E-posta adresi</li>
+                    <li>Gorunen ad</li>
+                    <li>Profil fotografi URL'si</li>
+                </ul>
+
+                <p><strong>Anonim Kullanim:</strong> Uygulamayi hesap olusturmadan kullanabilirsiniz. Bu durumda, ogrenme ilerlemenizi yerel olarak ve bulutta kaydetmek icin anonim bir kullanici tanimlayicisi olustururuz.</p>
+
+                <h3>Otomatik Olarak Toplanan Bilgiler</h3>
+                <p><strong>Oyun Verileri:</strong></p>
+                <ul>
+                    <li>Kelime ogrenme ilerlemesi ve istatistikleri</li>
+                    <li>Kazanilan puanlar, yildizlar ve seviyeler</li>
+                    <li>Tamamlanan kelime kartlari ve dersler</li>
+                    <li>Dogruluk yuzdeleri ve performans metrikleri</li>
+                    <li>Cok oyunculu mac gecmisi</li>
+                </ul>
+
+                <p><strong>Cihaz Bilgileri:</strong></p>
+                <ul>
+                    <li>Cihaz tipi ve isletim sistemi</li>
+                    <li>Benzersiz cihaz tanimlayicilari (Firebase kimlik dogrulamasi icin)</li>
+                    <li>Ag baglanti durumu</li>
+                </ul>
+
+                <h3>Ucuncu Taraflarca Toplanan Bilgiler</h3>
+                <p><strong>RevenueCat (Uygulama Ici Satin Almalar):</strong> Bir satin alma yaptiginizda, RevenueCat su bilgileri toplar:</p>
+                <ul>
+                    <li>Islem tanimlayicilari</li>
+                    <li>Abonelik durumu ve yenileme bilgileri</li>
+                    <li>Satin alma gecmisi</li>
+                </ul>
+                <p>RevenueCat'in gizlilik politikasina su adresten ulasabilirsiniz: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></p>
+
+                <p><strong>Firebase (Google):</strong> Kimlik dogrulama ve veri depolama icin Firebase kullaniyoruz. Firebase su bilgileri toplayabilir:</p>
+                <ul>
+                    <li>Kimlik dogrulama belirtecleri</li>
+                    <li>Kullanici tanimlayicilari</li>
+                    <li>Cokme raporlari (etkinlestirilmisse)</li>
+                </ul>
+                <p>Google'in gizlilik politikasina su adresten ulasabilirsiniz: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+            </section>
+
+            <section>
+                <h2>Bilgilerinizi Nasil Kullaniyoruz</h2>
+                <p>Topladigimiz bilgileri su amaclarla kullaniyoruz:</p>
+                <ul>
+                    <li>Kullanici hesabinizi olusturmak ve yonetmek</li>
+                    <li>Ogrenme ilerlemenizi cihazlar arasinda kaydetmek ve senkronize etmek</li>
+                    <li>Cok oyunculu kelime yarisi islevselligini saglamak</li>
+                    <li>Uygulama ici satin almalari islemek ve abonelikleri yonetmek</li>
+                    <li>Uygulamanin ogrenme deneyimini iyilestirmek ve optimize etmek</li>
+                    <li>Hesabiniz veya Uygulama hakkinda sizinle iletisim kurmak</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Veri Depolama ve Guvenlik</h2>
+                <p>Verileriniz su yontemlerle depolanir:</p>
+                <ul>
+                    <li><strong>Firebase Cloud Firestore:</strong> Google tarafindan barindirilan guvenli bulut depolama</li>
+                    <li><strong>Yerel Cihaz Depolamasi:</strong> Cevrimdisi islevsellik icin onbellege alinan veriler</li>
+                </ul>
+                <p>Kisisel bilgilerinizi korumak icin uygun teknik ve organizasyonel guvenlik onlemleri uyguluyoruz. Ancak, internet uzerinden iletim veya elektronik depolama yontemi %100 guvenli degildir.</p>
+            </section>
+
+            <section>
+                <h2>Veri Saklama</h2>
+                <p>Kisisel bilgilerinizi hesabiniz aktif oldugu surece veya size hizmet sunmak icin gerekli oldugu surece saklariz. Hesabinizi istediginiz zaman Uygulama ayarlarindan silebilirsiniz, bu durumda verileriniz sistemlerimizden kaldirilir.</p>
+            </section>
+
+            <section>
+                <h2>Haklariniz ve Secenekleriniz</h2>
+                <p><strong>Hesap Silme:</strong> Hesabinizi ve tum iliskili verilerinizi Uygulamanin ayarlar menusu (Ayarlar > Hesabi Sil) uzerinden silebilirsiniz.</p>
+                <p><strong>Hesap Baglama:</strong> Anonim kullanicilar, ogrenme ilerlemelerini guvence altina almak icin hesaplarini Google veya Apple'a baglayabilir.</p>
+                <p><strong>Veri Erisimi:</strong> Profil bilgilerinizi ve ogrenme istatistiklerinizi Uygulama icerisinde goruntuleyebilirsiniz.</p>
+            </section>
+
+            <section>
+                <h2>Cocuklarin Gizliligi</h2>
+                <p>Uygulama, cocuklar dahil her yastaki kullanici icin tasarlanmistir. Ebeveyn onasi olmadan 13 yasindan kucuk cocuklardan bilerek kisisel bilgi toplamiyoruz. Bir ebeveyn veya vasi iseniz ve cocugunuzun bize kisisel bilgi sagladigina inaniyorsaniz, lutfen bizimle iletisime gecin.</p>
+                <p>13 yasindan kucuk kullanicilar icin onerilerimiz:</p>
+                <ul>
+                    <li>Uygulamayi anonim modda kullanmak</li>
+                    <li>Hesap olusturma sirasinda ebeveyn gozetimi</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Talep Ettigimiz Izinler</h2>
+                <p><strong>Kamera Izni:</strong> Yalnizca cok oyunculu kelime yarisi odalarina katilmak icin QR kodlarini taramak amaciyla kullanilir. Kamera verilerini depolamaz veya iletmeyiz.</p>
+                <p><strong>Internet Erisimi:</strong> Ogrenme ilerlemesini senkronize etmek, kullanicilari dogrulamak ve cok oyunculu ozellikleri etkinlestirmek icin gereklidir.</p>
+            </section>
+
+            <section>
+                <h2>Ucuncu Taraf Hizmetleri</h2>
+                <p>Uygulama asagidaki ucuncu taraf hizmetleriyle entegre calisir:</p>
+                <ul>
+                    <li><strong>Google ile Giris:</strong> Hesap kimlik dogrulamasi icin</li>
+                    <li><strong>Apple ile Giris:</strong> Hesap kimlik dogrulamasi icin</li>
+                    <li><strong>Firebase:</strong> Veri depolama ve kimlik dogrulamasi icin</li>
+                    <li><strong>RevenueCat:</strong> Abonelik ve satin alma yonetimi icin</li>
+                </ul>
+                <p>Her hizmetin, bilgilerinizin kullanimini duzenleyen kendi gizlilik politikasi vardir.</p>
+            </section>
+
+            <section>
+                <h2>Uluslararasi Veri Transferleri</h2>
+                <p>Bilgileriniz kendi ulkeniz disindaki ulkelere aktarilabilir ve orada islenebilir. Firebase ve diger ucuncu taraf hizmetleri verileri dunya capinda cesitli konumlarda depolayabilir.</p>
+            </section>
+
+            <section>
+                <h2>Bu Gizlilik Politikasindaki Degisiklikler</h2>
+                <p>Bu Gizlilik Politikasini zaman zaman guncelleyebiliriz. Degisiklikleri bu sayfada yeni Gizlilik Politikasini yayinlayarak ve "Son Guncelleme" tarihini guncelleyerek size bildiririz.</p>
+            </section>
+
+            <section>
+                <h2>Bize Ulasin</h2>
+                <p>Bu Gizlilik Politikasi hakkinda sorulariniz varsa, lutfen bize su adresten ulasin:</p>
+                <p><a href="mailto:oguzcc@icloud.com">oguzcc@icloud.com</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Nerdy Lang. Tum haklari saklidir.</p>
+            <div class="footer-links">
+                <a href="privacy-tr.html">Gizlilik Politikasi</a>
+                <a href="terms-tr.html">Kullanim Kosullari</a>
+                <a href="delete-account-tr.html">Hesap Silme</a>
+                <a href="mailto:oguzcc@icloud.com">Iletisim</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

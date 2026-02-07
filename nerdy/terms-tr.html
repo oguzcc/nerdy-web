@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanim Kosullari - Nerdy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .lang-switcher {
+            position: absolute;
+            top: 40px;
+            right: 20px;
+        }
+
+        .lang-btn {
+            padding: 5px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            color: #f5a623;
+        }
+
+        .lang-btn.active {
+            background: rgba(245, 166, 35, 0.2);
+            color: #f5a623;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .back-link {
+            color: #f5a623;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            background: linear-gradient(90deg, #f5a623, #f7c56e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #f5a623;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #f7c56e;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #b0b0b0;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #f5a623;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        footer p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            margin: 0 15px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #f5a623;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .lang-switcher {
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switcher">
+            <a href="terms.html" class="lang-btn">EN</a>
+            <a href="terms-tr.html" class="lang-btn active">TR</a>
+        </div>
+
+        <header>
+            <a href="/index-tr.html" class="back-link">&larr; Tum Uygulamalar</a>
+            <br>
+            <a href="index-tr.html" class="back-link">&larr; Ana Sayfaya Don</a>
+            <h1>Kullanim Kosullari</h1>
+            <p class="last-updated">Son Guncelleme: Aralik 2024</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Kosullarin Kabulu</h2>
+                <p>Nerdy'yi ("Uygulama") indirerek, yukleyerek veya kullanarak bu Kullanim Kosullarina ("Kosullar") bagli olmayi kabul etmis olursunuz. Bu Kosullari kabul etmiyorsaniz, Uygulamayi kullanmayin.</p>
+            </section>
+
+            <section>
+                <h2>Hizmet Aciklamasi</h2>
+                <p>Nerdy, kullanicilarin interaktif oyunlar ve meydan okumalar araciligiyla matematik becerilerini gelistirmelerine yardimci olan bir matematik ogrenme oyunu uygulamasidir. Uygulama sunlari sunar:</p>
+                <ul>
+                    <li>Cesitli matematik oyun modlari (toplama, cikarma, carpma, bolme, kesirler ve daha fazlasi)</li>
+                    <li>Tek oyunculu ve cok oyunculu oyun</li>
+                    <li>Video tabanli ogrenme icerigi</li>
+                    <li>Ilerleme takibi ve basarilar</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Kullanici Hesaplari</h2>
+
+                <h3>Hesap Olusturma</h3>
+                <p>Sunlari kullanarak hesap olusturabilirsiniz:</p>
+                <ul>
+                    <li>Google ile Giris</li>
+                    <li>Apple ile Giris</li>
+                    <li>Anonim mod (sinirli islevsellik)</li>
+                </ul>
+                <p>Hesap kimlik bilgilerinizin gizliligini korumaktan ve hesabiniz altinda gerceklesen tum etkinliklerden siz sorumlusunuz.</p>
+
+                <h3>Hesap Baglama</h3>
+                <p>Anonim kullanicilar, ilerlemelerini korumak ve ek ozellikleri etkinlestirmek icin hesaplarini Google veya Apple'a baglayabilir.</p>
+
+                <h3>Hesap Feshi</h3>
+                <p>Hesabinizi istediginiz zaman Uygulama ayarlarindan silebilirsiniz. Bu Kosullari ihlal eden hesaplari askiya alma veya feshetme hakkini sakli tutariz.</p>
+            </section>
+
+            <section>
+                <h2>Abonelikler ve Odemeler</h2>
+
+                <h3>Premium Abonelik</h3>
+                <p>Uygulama premium abonelik planlari sunar:</p>
+                <ul>
+                    <li>Aylik abonelik</li>
+                    <li>Yillik abonelik</li>
+                </ul>
+
+                <h3>Odeme Isleme</h3>
+                <p>Tum odemeler Apple App Store veya Google Play Store uzerinden islenir. Fiyatlandirma ve yenileme politikalari dahil abonelik kosullari, ilgili uygulama magazasinin kosullarina tabidir.</p>
+
+                <h3>Otomatik Yenileme</h3>
+                <p>Abonelikler, mevcut donemin bitiminden en az 24 saat once iptal edilmedikce otomatik olarak yenilenir. Abonelikleri uygulama magazasi hesap ayarlarinizdan yonetebilirsiniz.</p>
+
+                <h3>Iadeler</h3>
+                <p>Iade talepleri, Apple veya Google'in ilgili iade politikalarina gore islenir.</p>
+            </section>
+
+            <section>
+                <h2>Kullanici Davranisi</h2>
+                <p>Sunlari yapmamayi kabul etmis olursunuz:</p>
+                <ul>
+                    <li>Uygulamayi yasadisi bir amac icin kullanmak</li>
+                    <li>Uygulamaya veya sistemlerine yetkisiz erisim saglamaya calismak</li>
+                    <li>Uygulamayi veya sunuculari engellemek veya bozmak</li>
+                    <li>Baska bir kisi veya kurulsu taklit etmek</li>
+                    <li>Hileler, aciklar veya yetkisiz degisiklikler kullanmak</li>
+                    <li>Cok oyunculu modlarda diger kullanicilara karsi kotuye kullanim davranisi sergilemek</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Fikri Mulkiyet</h2>
+
+                <h3>Bizim Icerigimiz</h3>
+                <p>Tasarimi, grafikleri, oyunlari, sesi ve icerigi dahil olmak uzere Uygulama bize aittir ve fikri mulkiyet yasalari tarafindan korunmaktadir. Iznimiz olmadan kopyalayamaz, degistiremez, dagitamaz veya turev eserler olusturamazsiniz.</p>
+
+                <h3>Kullanici Icerigi</h3>
+                <p>Uygulama icinde olusturdugununuz herhangi bir icerigin mulkiyeti size aittir. Uygulamayi kullanarak, hizmetlerimizi gelistirmek icin oyun verilerinizi kullanmamiz icin bize lisans vermis olursunuz.</p>
+            </section>
+
+            <section>
+                <h2>Cok Oyunculu Ozellikler</h2>
+
+                <h3>Oda Kodlari ve QR Kodlari</h3>
+                <p>Cok oyunculu odalar, katilim icin benzersiz kodlar ve QR kodlari kullanir. Bunlari yalnizca hedeflenen katilimcilarla paylasin.</p>
+
+                <h3>Adil Oyun</h3>
+                <p>Kullanicilar cok oyunculu oturumlar sirasinda adil oyuna katilmalidir. Hile yapmak veya hatalari istismar etmek hesap askiya alinmasina neden olabilir.</p>
+            </section>
+
+            <section>
+                <h2>Sorumluluk Reddi</h2>
+
+                <h3>"Oldugu Gibi" Esasi</h3>
+                <p>Uygulama, acik veya zimni herhangi bir garanti olmaksizin "oldugu gibi" ve "mevcut oldugu sekliyle" saglanmaktadir.</p>
+
+                <h3>Egitim Amaci</h3>
+                <p>Uygulama, egitici eglence icin tasarlanmistir. Belirli egitim sonuclarini veya akademik gelisimi garanti etmiyoruz.</p>
+
+                <h3>Hizmet Kullanilabilirligi</h3>
+                <p>Uygulamaya kesintisiz erisimi garanti etmiyoruz. Herhangi bir ozelligi istedigimiz zaman degistirebilir, askiya alabilir veya durdurabiliriz.</p>
+            </section>
+
+            <section>
+                <h2>Sorumluluk Sinirlamasi</h2>
+                <p>Yasalarin izin verdigi azami olcude, Uygulamayi kullaniminizdan kaynaklanan dolayli, arizi, ozel, sonucsal veya cezai zararlardan sorumlu olmayacagiz.</p>
+            </section>
+
+            <section>
+                <h2>Tazminat</h2>
+                <p>Uygulamayi kullaniminizdan veya bu Kosullari ihlal etmenizden kaynaklanan herhangi bir talep, zarar veya masraftan bizi zararsiz tutmayi ve tazmin etmeyi kabul edersiniz.</p>
+            </section>
+
+            <section>
+                <h2>Kosullardaki Degisiklikler</h2>
+                <p>Bu Kosullari istedigimiz zaman degistirebiliriz. Degisikliklerden sonra Uygulamayi kullanmaya devam etmeniz, yeni Kosullarin kabul edildigi anlamina gelir. Onemli degisiklikleri Uygulama araciligiyla kullanicilara bildirecegiz.</p>
+            </section>
+
+            <section>
+                <h2>Gecerli Yasa</h2>
+                <p>Bu Kosullar, yasa catismasi ilkeleri dikkate alinmaksizin, gecerli yasalara gore yonetilecek ve yorumlanacaktir.</p>
+            </section>
+
+            <section>
+                <h2>Bolunebilirlik</h2>
+                <p>Bu Kosullarin herhangi bir hukmunun uygulanamaz bulunmasi durumunda, kalan hukumler yururlukte kalmaya devam edecektir.</p>
+            </section>
+
+            <section>
+                <h2>Tam Anlasma</h2>
+                <p>Bu Kosullar, Gizlilik Politikamizla birlikte, Uygulama ile ilgili olarak sizinle aramizdaki tam anlasmayi olusturur.</p>
+            </section>
+
+            <section>
+                <h2>Bize Ulasin</h2>
+                <p>Bu Kosullar hakkinda sorulariniz varsa, lutfen bizimle iletisime gecin:</p>
+                <p><a href="mailto:oguzcc@icloud.com">oguzcc@icloud.com</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Nerdy. Tum haklari saklidir.</p>
+            <div class="footer-links">
+                <a href="privacy-tr.html">Gizlilik Politikasi</a>
+                <a href="terms-tr.html">Kullanim Kosullari</a>
+                <a href="delete-account-tr.html">Hesap Silme</a>
+                <a href="mailto:oguzcc@icloud.com">Iletisim</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

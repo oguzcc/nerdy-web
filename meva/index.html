@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meva - The Shelter of Your Soul</title>
+    <meta name="description" content="Meva is your spiritual companion for meditation, prayer tracking, Quran reading, and building meaningful habits. Connect with a community that inspires growth.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4ecdc4;
+        }
+
+        .back-to-apps {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #4ecdc4;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-to-apps:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #4ecdc4, #8ee8e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .coming-soon-badge {
+            display: inline-block;
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ecdc4;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 1px solid rgba(78, 205, 196, 0.3);
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #4ecdc4;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .feature-card p {
+            color: #888;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: #4ecdc4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 15px;
+            color: #888;
+        }
+
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-btn {
+            padding: 5px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            color: #4ecdc4;
+        }
+
+        .lang-btn.active {
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ecdc4;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .back-to-apps {
+                position: static;
+                transform: none;
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="position: relative;">
+            <a href="/" class="back-to-apps">&larr; All Apps</a>
+            <div class="lang-switcher">
+                <a href="index.html" class="lang-btn active">EN</a>
+                <a href="index-tr.html" class="lang-btn">TR</a>
+            </div>
+            <div class="logo">Meva</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The Shelter of Your Soul</h1>
+                <p>Your spiritual companion for meditation, prayer tracking, Quran reading, and building meaningful habits. Connect with a community that inspires growth.</p>
+                <div class="coming-soon-badge">Coming Soon to App Store &amp; Google Play</div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128591;</div>
+                        <h3>Meditation &amp; Dhikr</h3>
+                        <p>Guided meditation sessions and dhikr counter with multiple modes. Find peace and mindfulness.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128336;</div>
+                        <h3>Prayer Tracking</h3>
+                        <p>Track your daily prayers and spiritual habits. Stay consistent with reminders and progress insights.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128214;</div>
+                        <h3>Quran &amp; Dua</h3>
+                        <p>Read the Quran, listen to recitations, and explore curated dua collections for every occasion.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#129517;</div>
+                        <h3>Qibla Compass</h3>
+                        <p>Find the Qibla direction anywhere in the world. Accurate, fast, and easy to use.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128101;</div>
+                        <h3>Community</h3>
+                        <p>Share stories, connect with friends, and inspire each other on your spiritual journey.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#127793;</div>
+                        <h3>21-Day Journeys</h3>
+                        <p>Build lasting spiritual habits with guided 21-day programs. Track your chain and stay motivated.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Developed by Oguz Can</p>
+            <p>&copy; 2026 Meva. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="delete-account.html">Delete Account</a>
+                <a href="mailto:oguzcc@icloud.com">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
